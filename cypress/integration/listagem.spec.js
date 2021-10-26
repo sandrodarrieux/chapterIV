@@ -27,7 +27,7 @@ describe('', () => {
                 
         cy.visit("https://form-agilizei.netlify.app/listagem.html")
 
-        cy.get('table tbody tr').should('have.length', 2)
+        cy.get('table tbody tr').should('have.length', 12)
    
     });
 
