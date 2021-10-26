@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-26T00:52:45.555Z",
-    "end": "2021-10-26T00:52:48.662Z",
-    "duration": 3107,
-    "testsRegistered": 2,
+    "start": "2021-10-26T01:12:18.883Z",
+    "end": "2021-10-26T01:12:21.822Z",
+    "duration": 2939,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8acd1485-edcc-4003-b9dd-5d00c333dc1e",
+      "uuid": "9c7e6ade-baa0-4911-ab8c-2fa1cad53b7c",
       "title": "",
       "fullFile": "cypress/integration/listagem.spec.js",
       "file": "cypress/integration/listagem.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "529d6e2f-9941-4c10-824f-9e56f0b3b54d",
+          "uuid": "abab1134-8d08-4007-9c6d-172341941b7c",
           "title": "",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando não houver cadastros, então a listagem deve estar vazia",
               "fullTitle": " Quando não houver cadastros, então a listagem deve estar vazia",
               "timedOut": null,
-              "duration": 828,
+              "duration": 788,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.fixture('listagem-sem-itens').then(data => {\n  window.localStorage.setItem('data', JSON.stringify(data));\n});\ncy.visit(\"https://form-agilizei.netlify.app/listagem.html\");\ncy.get('table tbody tr').should('have.length', 0);",
               "err": {},
-              "uuid": "093575a5-31e5-4813-909c-d9b69703920c",
-              "parentUUID": "529d6e2f-9941-4c10-824f-9e56f0b3b54d",
+              "uuid": "f302eb81-1cc3-4076-8374-ca806dab4667",
+              "parentUUID": "abab1134-8d08-4007-9c6d-172341941b7c",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,25 @@
               "title": "Quando houver uma ou mais cadastros, então a listagem deve estar preenchida",
               "fullTitle": " Quando houver uma ou mais cadastros, então a listagem deve estar preenchida",
               "timedOut": null,
-              "duration": 525,
+              "duration": 306,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('listagem-com-itens').then(data => {\n  window.localStorage.setItem('data', JSON.stringify(data));\n});\ncy.visit(\"https://form-agilizei.netlify.app/listagem.html\");\ncy.get('table tbody tr').should('have.length', 2);",
+              "err": {},
+              "uuid": "dd1069e2-80e8-45a0-bbe3-272d2aa53402",
+              "parentUUID": "abab1134-8d08-4007-9c6d-172341941b7c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Quando houver uma ou mais cadastros, então a listagem deve trazer o nome de um dos filhos",
+              "fullTitle": " Quando houver uma ou mais cadastros, então a listagem deve trazer o nome de um dos filhos",
+              "timedOut": null,
+              "duration": 369,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +83,22 @@
               "context": null,
               "code": "cy.fixture('listagem-com-itens').then(data => {\n  window.localStorage.setItem('data', JSON.stringify(data));\n});\ncy.visit(\"https://form-agilizei.netlify.app/listagem.html\");\ncy.get('table tbody tr').should('have.length', 2);\ncy.get('table tbody').children().should('contain', ' SANDRO');",
               "err": {},
-              "uuid": "ac03fb4a-c235-42e2-ae2b-f27c95fbf90a",
-              "parentUUID": "529d6e2f-9941-4c10-824f-9e56f0b3b54d",
+              "uuid": "bcc257bd-10a7-4876-a959-e62654c0b4a0",
+              "parentUUID": "abab1134-8d08-4007-9c6d-172341941b7c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "093575a5-31e5-4813-909c-d9b69703920c",
-            "ac03fb4a-c235-42e2-ae2b-f27c95fbf90a"
+            "f302eb81-1cc3-4076-8374-ca806dab4667",
+            "dd1069e2-80e8-45a0-bbe3-272d2aa53402",
+            "bcc257bd-10a7-4876-a959-e62654c0b4a0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1353,
+          "duration": 1463,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

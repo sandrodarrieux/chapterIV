@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-26T00:52:26.646Z",
-    "end": "2021-10-26T00:52:36.783Z",
-    "duration": 10137,
+    "start": "2021-10-26T01:12:05.532Z",
+    "end": "2021-10-26T01:12:13.403Z",
+    "duration": 7871,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9fc1d0fd-3029-49a6-af2b-63e65f9c32f4",
+      "uuid": "f9c11668-c651-440b-be66-3cd168f86580",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "354efc1e-f84f-43fa-8b3b-72950de1e46d",
+          "uuid": "f3a00ec2-e885-43bd-8d8e-269cbc1908af",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado",
               "fullTitle": "Cadastro Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado",
               "timedOut": null,
-              "duration": 7092,
+              "duration": 5778,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://form-agilizei.netlify.app'); //Inputs de texto / textarea/ email -> type\ncy.get('input[name=firstName]').type(chance.first());\ncy.get('input[name=lastName]').type(chance.last());\ncy.get('textarea[name=adress]').type(chance.address());\ncy.get('input[name=emailAdress]').type(chance.email()); // Inputs radio / checkboxes -> check\ncy.get('input[value=n]').check();\ncy.get('input[type=checkbox]').check('Netflix');\ncy.get('input[type=checkbox]').check('Dormir'); // Inputs do tipo combobox / select -> select\ncy.get('select#countries').select('Dinamarca', {\n  force: true\n});\ncy.get('select#years').select('2006', {\n  force: true\n});\ncy.get('select#months').select('Janeiro', {\n  force: true\n});\ncy.get('select#days').select('8', {\n  force: true\n}); // Inputs de senha -> type\ncy.get('input#firstpassword').type('Alunos@2021');\ncy.get('input#secondpassword').type('Alunos@2021'); // Inputs do tipo button\ncy.get('button#submitbtn').click();\ncy.url().should('contain', 'listagem');",
               "err": {},
-              "uuid": "d914fb97-cc40-476d-b776-47ced524f5ef",
-              "parentUUID": "354efc1e-f84f-43fa-8b3b-72950de1e46d",
+              "uuid": "2e72cd9f-cadb-4c78-b190-f486b0256339",
+              "parentUUID": "f3a00ec2-e885-43bd-8d8e-269cbc1908af",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d914fb97-cc40-476d-b776-47ced524f5ef"
+            "2e72cd9f-cadb-4c78-b190-f486b0256339"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7092,
+          "duration": 5778,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
