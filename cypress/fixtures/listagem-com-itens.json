@@ -1,0 +1,31 @@
+[
+    {
+        "firstName": "SANDRO",
+        "lastName": "DALBOUNI",
+        "adress": "Rua\n306",
+        "emailAdress": "sandrodarrieux@gmail.com",
+        "radioGender": "m",
+        "checks": [
+            "Netflix"
+        ],
+        "selectCountries": "Austrália",
+        "selectYears": "1986",
+        "selectMonths": "Janeiro",
+        "pwd": "Senha@123"
+    },
+    {
+        "firstName": "Older",
+        "lastName": "DALBOUNI",
+        "adress": "Rua\n306",
+        "emailAdress": "spark@gmail.com",
+        "radioGender": "m",
+        "checks": [
+            "Netflix"
+        ],
+        "selectCountries": "Austrália",
+        "selectYears": "1986",
+        "selectMonths": "Janeiro",
+        "pwd": "Senha@123"
+    }
+
+]

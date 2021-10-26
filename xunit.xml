@@ -1,0 +1,4 @@
+<testsuite name="Mocha Tests" tests="2" failures="0" errors="0" skipped="0" timestamp="Wed, 20 Oct 2021 00:30:44 GMT" time="3.35">
+<testcase classname="" name="Quando n&#xE3;o houver cadastros, ent&#xE3;o a listagem deve estar vazia" time="1.004"/>
+<testcase classname="" name="Quando houver uma ou mais cadastros, ent&#xE3;o a listagem deve estar preenchida" time="0.325"/>
+</testsuite>
